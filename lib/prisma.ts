@@ -1,5 +1,5 @@
 // lib/prisma.ts
-import { PrismaClient } from '@prisma/client'
+import { PrismaClient } from '@prisma/client';
 
 const prismaClientPropertyName = `__prevent-name-collision__prisma`;
 type GlobalThisWithPrismaClient = typeof globalThis & {
@@ -19,5 +19,4 @@ const getPrismaClient = () => {
 };
 const prisma = getPrismaClient();
 
-
-export default prisma
+export default prisma;
