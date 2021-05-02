@@ -6,6 +6,7 @@
     "dev": "next",
     "build": "next build",
     "start": "next start",
+    "ts-node": "ts-node --compiler-options '{\"module\":\"CommonJS\"}'",
     "db": "docker-compose up -d db",
     "teardown": "docker-compose down -v",
     "lint": "prettier --write './**/*.{js,jsx,json,ts,tsx}'",
